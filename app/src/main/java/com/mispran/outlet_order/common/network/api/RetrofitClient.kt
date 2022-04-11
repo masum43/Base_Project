@@ -54,5 +54,6 @@ object RetrofitClient {
             addConverterFactory(MoshiConverterFactory.create(moshi))
         }.build().create(ApiService::class.java)
     }
+
     
 }
