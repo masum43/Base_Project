@@ -23,14 +23,14 @@ class UserDataStore(private val context: Context) {
 
     suspend fun getAuthToken() = context.dataStore.data.map { it[loginResponsePreferenceKey] }
         .map {
-            "2372752636289369"
+            "JhSH28231J312sfdj84710nnsajnd"
         }
         .firstOrNull()
 
 
     suspend fun saveUserInformation() = IO {
         context.dataStore.edit {
-            it[loginResponsePreferenceKey] = "2372752636289369"
+            it[loginResponsePreferenceKey] = "JhSH28231J312sfdj84710nnsajnd"
         }
     }
 

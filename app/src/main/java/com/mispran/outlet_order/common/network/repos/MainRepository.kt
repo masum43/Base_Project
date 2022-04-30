@@ -11,5 +11,7 @@ class MainRepository(
     private suspend fun token(): String = dataStore.getAuthToken() ?: ""
 
 
+    suspend fun fetchAnyApiData1() = apiHelper.fetchAnyApiData1(token())
 
+    suspend fun fetchAnyApiData2() = apiHelper.fetchAnyApiData2(token())
 }
